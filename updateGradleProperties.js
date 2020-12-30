@@ -3,8 +3,8 @@ var CONFIG_LINE = CONFIG_PROPERTY + '=false';
 
 
 module.exports = function(ctx) {
-  var fs = ctx.requireCordovaModule('fs'),
-      path = ctx.requireCordovaModule('path');
+  var fs = require('fs'),
+      path = require('path');
 
   var gradlePropertiesPath = path.join(ctx.opts.projectRoot, 'platforms/android/gradle.properties');
 
